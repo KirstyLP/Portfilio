@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Page Title</title>
+<title>Kirsty Poxon Portfolio</title>
 <meta name="description" content="Roughly 155 characters">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" media="screen and (max-width:800px;)" href="tablet.css">
+<link rel="stylesheet" media="screen and (max-width:530px;)" href="phone.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </head>
@@ -13,12 +15,11 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Coding Examples</a></li>
-            <li><a href="#">SCS Scheme</a></li>
-            <li><a href="#">Contact Form</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#examples">Portfolio</a></li>
+            <li><a href="scheme.html">SCS Scheme</a></li>
+            <li><a href="#contact">Contact Form</a></li>
 
         </ul>
     </nav>
@@ -33,5 +34,40 @@
         </div>
     </section>
 
+    <!-- About Section-->
+    <section id="about">
+        <h1 class="headings">About Me</h1>
+        <div id="pic">
+            <img src="img/me.png" alt="Kirsty Poxon">
+            <div id="intro">
+                <h2>Kirsty Poxon</h2>
+                <p>This is part is going to be load of nonsesne because it needs to be and I need to figure out what excatly I want to put in here. Maybe some storys? Nah more profesional would be about my progress in how I want and train to be here or whatever job I plan on getting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Examples -->
+    <section id="examples">
+        <h1 class="headings">Coding Examples</h1>
+        <div class="gallery">
+            <img src="img/coming.jpg" alt="Coming Soon">
+            <img src="img/coming.jpg" alt="Coming Soon">
+            <img src="img/coming.jpg" alt="Coming Soon">
+            <img src="img/coming.jpg" alt="Coming Soon">
+            <img src="img/coming.jpg" alt="Coming Soon">
+            <img src="img/coming.jpg" alt="Coming Soon">
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+        <h1 class="headings">Contact Me</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
 </body>
 </html>
