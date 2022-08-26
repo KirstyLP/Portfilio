@@ -120,6 +120,11 @@ html{
 #pic img{
     width: 575px;
     height: 400px;
+    border-radius: 90%;
+}
+
+#pic img:hover{
+    transform: scale(1.2) rotate(5deg);
 }
 
 #intro{
