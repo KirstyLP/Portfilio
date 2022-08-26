@@ -124,7 +124,8 @@ html{
 }
 
 #pic img:hover{
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(360deg);
+    transition: 1.5s;
 }
 
 #intro{
