@@ -221,10 +221,29 @@ html{
 
 #scsintro{
     display: flex;
-
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
+}
+
+#scsintro h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 32px;
+    letter-spacing: -1.2px;
+    word-spacing: 1.8px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+}
+
+#scsintro h2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 26px;
+    letter-spacing: -1.2px;
+    word-spacing: 1.8px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
 }
 
 #scsintro::before{
