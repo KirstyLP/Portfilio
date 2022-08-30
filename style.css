@@ -62,7 +62,7 @@ html{
     top: 0;
     right: 0;
     background-color: black;
-    background: url('img/banner.png') no-repeat right center/cover;
+    background: url('img/banner2.png') no-repeat right center/cover;
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -215,11 +215,10 @@ html{
 
 #scsintro{
     display: flex;
-    flex-direction: column;
+
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
-    text-align: center;
 }
 
 #scsintro::before{
@@ -235,21 +234,23 @@ html{
     opacity: 1;
 }
 
+.container{
+    height: 200px;
+    right: 50%;
+  }
+
 #introtext{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
     margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
     background-color:white;
     opacity: 0.90;
     border: 3px solid black;
     box-shadow: 2px 2px 7px 1px black;
-}
-
-#netmatter{
-    display: flex;
-    flex-direction:row;
-    text-align: center;
-    padding: 10px;
+    height: 600px;
+    width: 40%;
+    right: 400px;
 }

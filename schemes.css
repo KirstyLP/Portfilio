@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#scsintro{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#scsintro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    background: url('img/techback.jpg') no-repeat right center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#introtext{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+    background-color:white;
+    opacity: 0.90;
+    border: 3px solid black;
+    box-shadow: 2px 2px 7px 1px black;
+}
+
+#netmatter{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    padding: 10px;
+}
