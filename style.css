@@ -164,6 +164,11 @@ html{
     margin: 10px;
 }
 
+.gallery img:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
 /* Contact Section */
 
 #contact{
