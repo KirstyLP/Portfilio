@@ -11,13 +11,23 @@ html{
 /* Navigation Bar */
 
 .navbar{
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
+    position: fixed;
 }
+
+/* Vertical Sidebar */
+
+.vertical-menu {
+    width: 130px; 
+    height: 300px;
+  }
+  
+  .vertical-menu a {
+    display: block; 
+    text-decoration: none;
+  }
 
 .navbar ul{
     display: flex;
@@ -29,6 +39,7 @@ html{
     font-family: century;
     font-size: 1.1rem;
     font-weight: bold;
+    
 }
 
 .navbar ul li a{
@@ -42,6 +53,10 @@ html{
     background-color: #0071AA;
     color: black;
     box-shadow: 0 0 10px #0071AA;
+}
+
+.navbar ul li:first-child{
+    font-size: 60px;
 }
 
 /* Home Section */
@@ -245,6 +260,7 @@ html{
     font-weight: 700;
     text-decoration: none solid rgb(68, 68, 68);
 }
+
 
 #scsintro::before{
     content: "";
