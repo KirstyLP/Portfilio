@@ -7,49 +7,38 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" media="screen and (max-width:800px;)" href="tablet.css">
 <link rel="stylesheet" media="screen and (max-width:530px;)" href="phone.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </head>
 <body>
 <!-- Content -->
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <div class="vertical-menu">
-            <li id="kp"><a href="#home">KP</a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#examples">Portfolio</a></li>
-            <li><a href="scheme.html">SCS Scheme</a></li>
-            <li><a href="#contact">Contact Form</a></li>
-            </div>
-        </ul>
-    </nav>
-
-    <!-- Home Page -->
+<!-- Visible menu -->
+<nav class="navbar">
+    <ul>
+        <div class="vertical-menu">
+        <li id="kp"><a href="#home">KP</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="#examples">Portfolio</a></li>
+        <li><a href="scheme.html">SCS Scheme</a></li>
+        <li><a href="#contact">Contact Form</a></li>
+        </div>
+    </ul>
+</nav>
+<!-- Home Page -->
     <section id="home">
         <div class="main">
             <h1 class="headings">I am <br> Kirsty Poxon</h1>
+            <div class="typing-container">
+                <span id="sentence" class="sentence">Testing,  </span>
+                <p id="text"></p>
+                <span class="input-cursor"></span>
+              </div>
             <button class="btn" onclick="window.location.href='#about'">
                 Find out more!
             </button>
         </div>
-    </section>
-
-    <!-- About Section-->
-    <section id="about">
-        <h1 class="headings">About Me</h1>
-        <div id="pic">
-            <img src="img/pic2.jpg" alt="Kirsty Poxon">
-            <div id="intro">
-                <h2>Kirsty Poxon</h2>
-                <P>I've always been hardworking, due to my past. I always wanted to be the best and to prove myself, so I always kept busy and learn as many skills as possible and most of the skills I learn do help me in the field; I plan on working on but it wasn't always what I wanted to be. From a young age, I wanted to be game designer as I loved games and puzzles and when I saw my brother play them and see the joy he got by playing. I wanted to do the same for others. I also wanted to be an influencer as most kids did as the youtube era became popular, however, I realised that goal was unrealistic as I dont't do well when there is an audience but it a weakness I working on improving.</P>
-                <br>
-                <p>Currently, I am working with Netmatters to improve my skills. You can find different projects I have made in my portfilio. However, I am also working on my art skills as I find drawing relaxs me when I am not working; Drawing and Video games are my relax time and helps me keep sane. Some of my games I regular play are Minecraft, Dragon Age: Inquistion and Outward. I don't just love games but I love binge watching shows espically if it is fantasy based; some of my favourite shows are Supernatural, The Orginals and Buffy the Vampire Slayer. I'm currently watching Blacklist. I don't just rely on technology for my entaintment as I love going on walks and reading in nice areas to remove myself from the tech world as it can be overwhelming at times. Some of favourite books are; Seven Soucerers, Skulduggery Pleasant and Harry Potter(Movies don't do them justice).</p>
-                <br>
-                <p>As I grew up, my goals also changed and now hoping to work in the field of development. That why I was I happy to join the Scion Scheme in which they help focus my skills and help me learn the skills to achieve my goal. My goals is hopefully get a job as a software developer the make me enough that I can live comfortable. I am also hoping that field I go into will hopefully include A.I as I love technology. However, I mostly care about a good enviorment and making enough that I can support not just myself but my family. Where I see myself in 5 years? I hoping to be fully employ in a full time job, I get myself a place in which is not share accomandation and that my son can call home. </p>
-            </div>
-        </div>
+<script src="script.js"></script>
     </section>
 
     <!-- Coding Examples -->
@@ -69,7 +58,7 @@
     <section id="contact">
         <h1 class="headings">Contact Me</h1>
         <form action="" class="form">
-            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="text" name="name" class="input" required placeholder="Enter Your Name">
             <input type="email" name="email" class="input" placeholder="Enter Your Email">
             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
             <input type="submit" value="SEND" id="send">

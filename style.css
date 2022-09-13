@@ -22,6 +22,7 @@ html{
 .vertical-menu {
     width: 130px; 
     height: 300px;
+    /* left: -300px;*/
   }
   
   .vertical-menu a {
@@ -58,7 +59,6 @@ html{
 .navbar ul li:first-child{
     font-size: 60px;
 }
-
 /* Home Section */
 
 #home{
@@ -118,6 +118,61 @@ html{
     font-weight: bold;
 }
 
+/* Animation */
+.typing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#text {
+    margin-left: 8px;
+}
+
+.input-cursor {
+      display: inline-block;
+      width: 2px;
+      height: size;
+      background-color: white;
+      margin-left: 8px;
+      animation: blink .6s linear infinite alternate;
+    }
+  
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .typing-container #feature-text {
+    margin-left: 8px;
+  }
+  body .typing-container .input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink 0.6s linear infinite alternate;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 /* About Section */
 
 #about{
